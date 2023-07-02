@@ -50,6 +50,72 @@ Banyak bahasa pemrograman menggunakan kompilasi, seperti C, C++, Java, dan Go. C
 
 # NGECOMPILE C++ MENGGUNAKAN TERMINAL
 
+tutorial untuk membuat program Hello World sederhana dalam bahasa C++ dan melakukan kompilasi menggunakan terminal:
+
+1. Buka editor teks atau IDE favoritmu dan buat file baru dengan ekstensi `.cpp`, misalnya `hello.cpp`.
+
+2. Tulis kode program Hello World berikut ini di dalam file `hello.cpp`:
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+```
+
+Kode di atas menggunakan header `<iostream>` untuk mengakses fungsi `cout` yang digunakan untuk mencetak pesan di layar.
+
+3. Simpan file `hello.cpp`.
+
+4. Buka terminal atau command prompt di komputermu.
+
+5. Pindah ke direktori tempat kamu menyimpan file `hello.cpp` menggunakan perintah `cd`.
+
+6. Jalankan perintah berikut ini untuk melakukan kompilasi file `hello.cpp` menggunakan `gcc` (GNU Compiler Collection):
+
+```bash
+g++ hello.cpp -o hello
+```
+
+- `g++` adalah perintah untuk menjalankan compiler C++ dari GCC.
+- `hello.cpp` adalah nama file sumber yang akan dikompilasi.
+- `-o hello` digunakan untuk menentukan nama file output atau file hasil kompilasi. Dalam contoh ini, file output disebut `hello`.
+
+7. Jika kompilasi berhasil, perintah tersebut akan menghasilkan file eksekusi dengan nama `hello`.
+
+8. Jalankan program Hello World yang telah dikompilasi dengan perintah:
+
+```bash
+./hello
+```
+
+9. Jika semuanya berjalan dengan baik, kamu akan melihat pesan "Hello, World!" dicetak di terminal.
+
+Itu adalah langkah-langkah untuk membuat program Hello World sederhana dalam bahasa C++ dan melakukan kompilasi menggunakan terminal. 
+
+Alur kerja kompilasi C++ melibatkan:
+1. Preprocessing: Preprocessor (`cpp`) mengambil file sumber C++ dan memproses direktif preprocessor seperti `#include` dan `#define`.
+2. Compilation: Compiler C++ (`g++`) mengambil hasil dari preprocessing dan menerjemahkannya menjadi kode objek dalam bahasa mesin.
+3. Linking: Jika program C++ menggunakan pustaka eksternal atau file objek lainnya, linker (`ld`) menggabungkan file objek tersebut dan menghasilkan file eksekusi yang dapat dieksekusi.
+
+```
+Lenovo@DESKTOP-9EO0J5L MINGW64 /d/cppp badas
+$ g++ hello.cpp -o setelahcompile
+
+Lenovo@DESKTOP-9EO0J5L MINGW64 /d/cppp badas
+$ ls
+hello.cpp  setelahcompile.exe*
+
+Lenovo@DESKTOP-9EO0J5L MINGW64 /d/cppp badas
+$ ./setelahcompile.exe
+
+Hello, World!
+```
+
+<br>
+<br>
 
 <div align="center">
   <a href="#list">(Back to List)</a>
