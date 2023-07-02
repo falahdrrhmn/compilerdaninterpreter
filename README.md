@@ -45,10 +45,11 @@ Banyak bahasa pemrograman menggunakan kompilasi, seperti C, C++, Java, dan Go. C
 4. Error Handling: Jika interpreter menemui kesalahan saat menjalankan instruksi, ia menghasilkan pesan kesalahan dan berhenti eksekusi.
 5. Debugging dan Eksekusi Interaktif: Interpreter memungkinkan proses debugging dan eksekusi interaktif yang memungkinkan pengguna untuk memeriksa dan memodifikasi variabel, menjalankan potongan kode secara terpisah, atau melakukan langkah demi langkah dalam eksekusi program.
 
-
-
 <br>
 <br>
+
+# NGECOMPILE C++ MENGGUNAKAN TERMINAL
+
 
 <div align="center">
   <a href="#list">(Back to List)</a>
