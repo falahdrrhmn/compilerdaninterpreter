@@ -1,8 +1,49 @@
 # PERBEDAAN ANTARA COMPILER DAN INTERPRETER
 
 <div id="top"></div>
+
 <!-- GETTING STARTED -->
-## Instalasi
+
+## Compiler
+
+- Compiler adalah program yang menerjemahkan seluruh kode program dari bahasa pemrograman tingkat tinggi ke dalam kode objek atau kode mesin yang dapat dieksekusi oleh komputer.
+- Compiler melakukan analisis sintaksis dan analisis semantik terhadap kode sumber untuk memastikan kebenaran sintaks dan penggunaan tipe data yang tepat.
+- Proses kompilasi biasanya terdiri dari beberapa tahap, seperti analisis, optimasi, dan generasi kode objek.
+- Setelah kompilasi selesai, hasil akhirnya adalah file eksekusi yang dapat dieksekusi secara langsung oleh komputer tanpa memerlukan keberadaan compiler.
+
+## Interpreter
+
+- Interpreter adalah program yang membaca, menganalisis, dan menjalankan kode program satu baris atau satu instruksi pada satu waktu.
+- Interpreter menerjemahkan dan menjalankan kode program secara langsung tanpa memerlukan tahap kompilasi terlebih dahulu.
+- Interpreter membaca kode program baris per baris atau instruksi per instruksi, menerjemahkan instruksi tersebut menjadi kode mesin, dan langsung menjalankannya.
+- Proses interpretasi terjadi saat program dijalankan, sehingga perubahan pada kode program dapat langsung dilihat hasilnya tanpa perlu melakukan kompilasi ulang.
+
+## Perbedaan antara Compiler dan Interpreter
+
+1. Tahapan: Compiler melakukan proses kompilasi yang melibatkan analisis, optimasi, dan generasi kode objek, sementara interpreter langsung menerjemahkan dan menjalankan kode program tanpa tahap kompilasi.
+2. Eksekusi: Compiler menghasilkan file eksekusi yang dapat dieksekusi tanpa compiler, sedangkan interpreter membaca dan menjalankan kode program langsung saat program dijalankan.
+3. Performa: Kode yang telah dikompilasi cenderung berjalan lebih cepat karena telah diterjemahkan menjadi kode mesin, sementara program yang dieksekusi oleh interpreter biasanya lebih lambat karena perlu menerjemahkan instruksi pada saat eksekusi.
+4. Debugging: Karena interpreter membaca kode program per baris, debugging dapat dilakukan dengan mudah karena setiap baris bisa dianalisis secara langsung, sedangkan pada compiler, debugging bisa sedikit lebih rumit karena memerlukan pemahaman lebih lanjut tentang kesalahan yang muncul saat kompilasi.
+
+## Penggunaan pada Bahasa Pemrograman
+
+Banyak bahasa pemrograman menggunakan kompilasi, seperti C, C++, Java, dan Go. Contoh bahasa pemrograman yang menggunakan interpreter adalah Python, JavaScript, dan Ruby.
+
+## Alur Kerja Compiler
+
+1. Analisis Sintaksis: Compiler membaca kode sumber dan memeriksa struktur sintaksisnya. Jika ada kesalahan sintaksis, compiler menghasilkan pesan kesalahan.
+2. Analisis Semantik: Compiler menganalisis makna dan penggunaan kata-kata serta instruksi dalam program. Compiler memastikan kebenaran tipe data, pemanggilan fungsi, dan struktur program sesuai dengan aturan bahasa pemrograman.
+3. Optimasi: Compiler melakukan optimasi kode untuk meningkatkan performa atau mengurangi ukuran kode. Ini melibatkan pengurangan redundansi, penggabungan instruksi, dan penghilangan kode yang tidak terpakai.
+4. Generasi Kode Objek: Setelah tahap analisis dan optimasi selesai, compiler menghasilkan kode objek atau kode mesin yang sesuai dengan arsitektur target komputer. Kode objek ini tidak dapat dijalankan langsung, tetapi merupakan representasi dari kode program dalam bentuk bahasa mesin yang dapat dieksekusi.
+5. Linking: Jika program terdiri dari beberapa file atau menggunakan pustaka eksternal, compiler melakukan proses linking untuk menggabungkan kode objek dengan kode objek lainnya dan pustaka yang diperlukan. Hasil akhirnya adalah file eksekusi yang dapat dieksekusi secara langsung oleh komputer.
+
+## Alur Kerja Interpreter
+
+1. Analisis dan Parsing: Interpreter membaca kode program dan melakukan analisis sintaksis. Kemudian, interpreter memecah kode program menjadi struktur data yang dapat diproses lebih lanjut.
+2. Menerjemahkan dan Menjalankan Instruksi: Interpreter menerjemahkan dan menjalankan instruksi kode program satu per satu secara berurutan. Interpreter membaca instruksi, menerjemahkannya menjadi instruksi yang dapat dieksekusi oleh komputer, dan menjalankannya.
+3. Iterasi: Setelah menjalankan satu instruksi, interpreter melanjutkan ke instruksi berikutnya, dan proses ini berlanjut hingga seluruh kode program selesai dieksekusi.
+4. Error Handling: Jika interpreter menemui kesalahan saat menjalankan instruksi, ia menghasilkan pesan kesalahan dan berhenti eksekusi.
+5. Debugging dan Eksekusi Interaktif: Interpreter memungkinkan proses debugging dan eksekusi interaktif yang memungkinkan pengguna untuk memeriksa dan memodifikasi variabel, menjalankan potongan kode secara terpisah, atau melakukan langkah demi langkah dalam eksekusi program.
 
 
 
